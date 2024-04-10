@@ -1,0 +1,30 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento 2",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/c48fca35-abf8-4635-9fdd-146558388db1/attendees
+Content-Type: application/json
+
+{
+  "name": "Nanda Bergh",
+  "email": "nandaberg2@hotmail.com"
+}
+
+### 
+GET http://localhost:3333/events/c48fca35-abf8-4635-9fdd-146558388db1
+
+###
+GET http://localhost:3333/attendees/3/badge
+
+###
+GET http://localhost:3333/attendees/3/check-in
+
+###
+GET http://localhost:3333/events/c48fca35-abf8-4635-9fdd-146558388db1/attendees
